@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web Workshop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-8 m-auto d-block">
+            <br>
+        <h1 class="text-primary text-center"  style="font-family: 'Arial Narrow', Arial, sans-serif;"> Web Workshop</h1>
+        <form action="#" onsubmit=" return validation()" class="bg-light">
+            <div class="form-group">
+                <label>* Username</label>
+                <input type="text" id="user"  class="form-control">
+                <span id="un" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>* Email</label>
+                <input type="text" id="email"  class="form-control">
+                <span id="em" class="text-danger"></span>
+            </div>
+                <div class="form-group">
+                <label>* Mobile no</label>
+                <input type="text" id="mobile"  class="form-control">
+                <span id="mn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>* Organization/institute</label>
+                <input type="text" id="organization"  class="form-control">
+                <span id="org" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>* Education</label>
+                <br>
+                <input type="radio" id="undergraduate" name="education" value="education">
+                <label for="Undergraduate">Undergraduate</label><br>
+                <input type="radio" id="post-graduate" name="education" value="education">
+                <label for="post-graduate">Post-graduate</label><br>
+                <input type="radio" id="Masters" name="education" value="education">
+                <label for="Masters">Masters</label>
+                <span id="edu" class="text-danger"></span>
+            </div>
+        <div class="form-group">
+            <label>* Have you attend any workshop before?</label>
+            <br>
+            <input type="radio" id="no" name="exp" value="exp">
+            <label for="exp">no</label><br>
+            <input type="radio" id="yes" name="exp" value="exp">
+            <label for="exp">Yes</label>
+        </div>
+        <input type="submit" name="submit" id="submit" class="btn-primary">
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
